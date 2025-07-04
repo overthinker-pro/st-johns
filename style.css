@@ -16,8 +16,8 @@ body {
 :root {
   --primary-color: #2a324b;
   --secondary-color: #990d35;
-  --hover-color: #f2f79e;
-  --text-hover: #c7ccdb;
+  --text-color: #f2f79e;
+  --hover-color: #c7ccdb;
 }
 
 header {
@@ -45,7 +45,7 @@ header {
 }
 
 .navbar a {
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
   font-size: 1.1rem;
   padding: 8px 15px;
@@ -54,8 +54,7 @@ header {
 }
 
 .navbar a:hover {
-  background-color: var(--hover-color);
-  color: var(--primary-color);
+  background-color: #3f4b70;
 }
 
 .hamburger-menu {
@@ -126,22 +125,43 @@ header {
 .homepage {
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 
 .mainContent {
-  background-color: #a9c263;
+  margin-top: 2rem;
+  padding-left: 20px;
 }
-.sideBar {
-  background-color: #990d35;
-  padding: 10px;
-}
-.secondaryContent {
-  background-color: #c7ccdb;
+.mainContent #homePageHeading {
+  font-size: 80px;
+  font-weight: 800;
 }
 
+.sideBar {
+  margin-top: 2rem;
+  border: 1px solid;
+  padding: 30px;
+}
+.sideBar #ourServices {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+.sideBar ul {
+  line-height: 25px;
+  list-style: none;
+}
+
+.secondaryContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid;
+}
 
 /* homepage desktop view */
-@media (min-width: 600px) {
+@media (min-width: 900px) {
   .homepage {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -150,20 +170,17 @@ header {
   }
 
   .mainContent {
-    background-color: #a9c263;
     grid-column: span 3 / span 3;
     grid-row: span 3 / span 3;
   }
 
   .sideBar {
-    background-color: #990d35;
     grid-column: span 2 / span 2;
     grid-row: span 5 / span 5;
     grid-column-start: 4;
   }
 
   .secondaryContent {
-    background-color: #c7ccdb;
     grid-column: span 3 / span 3;
     grid-row: span 2 / span 2;
     grid-row-start: 4;
