@@ -14,14 +14,14 @@ body {
 }
 
 :root {
-  --primary-color: #2a324b;
-  --secondary-color: #990d35;
-  --text-color: #f2f79e;
-  --hover-color: #c7ccdb;
+  --primary-color: #3F0D12;
+  --secondary-color: #521218;
+  --ternary-color: #0B3948;
+  --backup-color: #F1F0CC;
 }
 
 header {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   padding: 5px 20px;
   display: flex;
   justify-content: space-between;
@@ -45,7 +45,7 @@ header {
 }
 
 .navbar a {
-  color: var(--text-color);
+  color: var(--backup-color);
   text-decoration: none;
   font-size: 1.1rem;
   padding: 8px 15px;
@@ -54,7 +54,7 @@ header {
 }
 
 .navbar a:hover {
-  background-color: #3f4b70;
+  background-color: var(--backup-color) ;
 }
 
 .hamburger-menu {
@@ -135,6 +135,7 @@ header {
 .mainContent #homePageHeading {
   font-size: 80px;
   font-weight: 800;
+  color: var(--primary-color);
 }
 
 .sideBar {
@@ -151,6 +152,9 @@ header {
 .sideBar ul {
   line-height: 25px;
   list-style: none;
+}
+.sideBar ul li {
+  font-weight: 500;
 }
 
 .secondaryContent {
