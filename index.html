@@ -4,51 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="images/logo/FullLogo.png">
+    <link rel="icon" href="images/logo/FullLogo.png" />
     <script defer src="script.js"></script>
     <title>St. Johns Paper Mart, Thiruvalla</title>
   </head>
   <body>
     <header>
-      <div class="logo">
-        <img src="images/logo/logo.png" alt="Logo" id="logo" />
+      <div class="container">
+        <img src="images/logo/logo.png" alt="Logo" class="logo" />
+        <nav class="navbar">
+          <a href="#services">Services</a>
+          <a href="#contact">Location</a>
+        </nav>
+        <button class="hamburger" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-      <nav class="navbar">
-        <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Location</a></li>
-        </ul>
-      </nav>
-      <button class="hamburger-menu" aria-label="Toggle navigation menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
     </header>
-    
-    <!-- Homepage -->
-    <div class="homepage">
-      <div class="mainContent">
-        <h1 id="homePageHeading">St. Johns <br> Paper Mart</h1>
-      </div>
 
-      <div class="sideBar">
-        <h3 id="ourServices">Our Services</h3>
+    <main class="homepage">
+      <section class="hero">
+        <h1>St. Johns Paper Mart</h1>
+        <p class="tagline">Your One-Stop Shop for Office & Print Essentials</p>
+        <a href="tel:+919847115956" class="cta-button">Call Now</a>
+      </section>
+
+      <section class="services" id="services">
+        <h2>Our Services</h2>
         <ul>
           <li>Photocopy (A4, A3, Legal)</li>
           <li>Mobile Recharge</li>
-          <li>Color Print</li>
+          <li>Color & B/W Print</li>
           <li>Spiral Binding</li>
           <li>Lamination (ID Cards)</li>
           <li>Office Stationery</li>
-          <li>Visiting and Invitation Cards</li>
+          <li>Custom Cards & Invitations</li>
         </ul>
-      </div>
-      <div class="secondaryContent">
-        <button id="cta"><a href="tel:+919847115956">Call Now</a></button>
-      </div>
-    </div>
+      </section>
+    </main>
 
-    <!-- <button class="back-button" onclick="history.back()">← Go Back</button> -->
+    <footer id="contact">
+      <p>📍 Thiruvalla, Kerala</p>
+      <p>📞 +91 98471 15956</p>
+    </footer>
   </body>
 </html>
