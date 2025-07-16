@@ -7,12 +7,14 @@
     <link rel="icon" href="images/logo/logo.png" />
     <script defer src="script.js"></script>
     <title>St. Johns Paper Mart, Thiruvalla</title>
+    <script
+      src="https://kit.fontawesome.com/c61501f624.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-      <div class="container">
-        <img src="images/logo/logo.png" alt="Logo" class="logo" />
-      </div>
+      <img src="images/logo/logo.png" alt="Logo" class="logo" />
     </header>
 
     <main class="homepage">
@@ -21,7 +23,6 @@
         <p class="tagline">Your One-Stop Shop for Office & Print Essentials</p>
         <a href="tel:+919847115956" class="cta-button">Call Now</a>
       </section>
-
       <section class="services" id="services">
         <h2>Our Services</h2>
         <ul>
@@ -36,9 +37,26 @@
       </section>
     </main>
 
+    <!-- scroll-down-animation-arrow -->
+    <div class="down-arrow-div">
+      <div class="arrow-div" onclick="floating()">
+        <i class="fa-solid fa-angles-down"></i>
+      </div>
+    </div>
+
+    <div id="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.0915191354222!2d76.57015308961535!3d9.38061175534213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06240b675a1a8f%3A0xd1e7145796b0b257!2sSt%20Johns%20Paper%20Mart!5e1!3m2!1sen!2sin!4v1752693498504!5m2!1sen!2sin"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        id="map"
+      ></iframe>
+    </div>
     <footer id="contact">
-      <p>📍 Thiruvalla, Kerala</p>
-      <p>📞 +91 98471 15956</p>
+      <p>
+        <i class="fa-solid fa-location-dot" id="icons"></i> Thiruvalla, Kerala
+      </p>
+      <p><i class="fa-solid fa-phone" id="icons"></i> +91 98471 15956</p>
     </footer>
   </body>
 </html>
