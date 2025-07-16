@@ -52,7 +52,8 @@ header {
 }
 
 .logo {
-  height: 50px;
+  height: 60px;
+  border-radius: 50px;
 }
 
 .homepage {
@@ -105,11 +106,15 @@ header {
   color: var(--dark);
 }
 
-footer {
+#contact {
   text-align: center;
   padding: 2rem;
   background: var(--dark);
   color: var(--light);
   font-size: 0.9rem;
   margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
 }
